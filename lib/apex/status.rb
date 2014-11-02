@@ -1,3 +1,6 @@
+require 'bigdecimal'
+require "nokogiri"
+
 module Apex
 	class Status
 		attr_accessor :date, :power, :probes, :outlets
@@ -9,7 +12,7 @@ module Apex
 		end
 
 
-		def initalize
+		def initialize
 			@probes = {}
 			@outlets = {}
 		end
@@ -19,6 +22,14 @@ module Apex
 			doc = Nokogiri::XML(xml)
 
 			@date = Date.strptime(doc.at_xpath('//status/date').text, '%m/%d/%Y %H:%M:%s')
+
+			doc.at_xpath('//status/probes').xpath('./probe').each{|probe|
+				add_probe(
+					probe.at_xpath('./name').text,
+					BigDecimal.new(probe.at_xpath('./value').text),
+					probe.at_xpath('./type').text
+				)
+			}
 		end
 
 
