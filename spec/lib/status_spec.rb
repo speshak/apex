@@ -9,5 +9,6 @@ describe Apex::Status, '#read_xml' do
 		expect(status.date).to eq(Date.strptime('12/29/2013 19:14:58', '%m/%d/%Y %H:%M:%s'))
 
 		expect(status.probes['Temp'][:value]).to eq(BigDecimal.new('77.6'))
+		expect(status.outlets['VarSpd3_I3'][:state]).to eq('OFF')
 	end
 end

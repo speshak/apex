@@ -1,5 +1,4 @@
 require "open-uri"
-require "nokogiri"
 
 module Apex
 	class Controller 

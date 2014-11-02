@@ -23,11 +23,21 @@ module Apex
 
 			@date = Date.strptime(doc.at_xpath('//status/date').text, '%m/%d/%Y %H:%M:%s')
 
-			doc.at_xpath('//status/probes').xpath('./probe').each{|probe|
+			doc.xpath('//status/probes/probe').each{|probe|
 				add_probe(
 					probe.at_xpath('./name').text,
 					BigDecimal.new(probe.at_xpath('./value').text),
 					probe.at_xpath('./type').text
+				)
+			}
+
+
+			doc.xpath('//status/outlets/outlet').each{|outlet|
+				add_outlet(
+					outlet.at_xpath('./name').text,
+					outlet.at_xpath('./outputID').text,
+					outlet.at_xpath('./state').text,
+					outlet.at_xpath('./deviceID').text
 				)
 			}
 		end
