@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<status software="4.31_CD13" hardware="1.0">
+<hostname>apex</hostname>
+<serial>AC4:33519</serial>
+<timezone>-6</timezone>
+<date>12/29/2013 19:14:58</date>
+<power><failed>12/28/2013 16:14:59</failed>
+<restored>12/28/2013 16:15:29</restored></power>
+<probes>
+<probe>
+<name>Temp</name> <value>77.6</value>
+ <type>Temp</type></probe>
+<probe>
+<name>pH</name> <value>7.90</value>
+ <type>pH</type></probe>
+<probe>
+ <name>Amp_3</name> <value>1.9  </value>
+ <type>Amps</type></probe></probes>
+<outlets>
+<outlet>
+ <name>VarSpd1_I1</name>
+ <outputID>0</outputID>
+ <state>OFF</state>
+ <deviceID>base_Var1</deviceID>
+</outlet>
+<outlet>
+ <name>VarSpd2_I2</name>
+ <outputID>1</outputID>
+ <state>OFF</state>
+ <deviceID>base_Var2</deviceID>
+</outlet>
+<outlet>
+ <name>VarSpd3_I3</name>
+ <outputID>2</outputID>
+ <state>OFF</state>
+ <deviceID>base_Var3</deviceID>
+</outlet>
+<outlet>
+ <name>VarSpd4_I4</name>
+ <outputID>3</outputID>
+ <state>OFF</state>
+ <deviceID>base_Var4</deviceID>
+</outlet>
+<outlet>
+ <name>SndAlm_I6</name>
+ <outputID>4</outputID>
+ <state>AOF</state>
+ <deviceID>base_Alarm</deviceID>
+</outlet>
+<outlet>
+ <name>SndWrn_I7</name>
+ <outputID>5</outputID>
+ <state>AOF</state>
+ <deviceID>base_Warn</deviceID>
+</outlet>
+<outlet>
+ <name>EmailAlm_I5</name>
+ <outputID>6</outputID>
+ <state>AOF</state>
+ <deviceID>base_email</deviceID>
+</outlet>
+<outlet>
+ <name>Return</name>
+ <outputID>7</outputID>
+ <state>AON</state>
+ <deviceID>3_1</deviceID>
+</outlet>
+<outlet>
+ <name>RefugeLight</name>
+ <outputID>8</outputID>
+ <state>AOF</state>
+ <deviceID>3_2</deviceID>
+</outlet>
+<outlet>
+ <name>EB8_3_3</name>
+ <outputID>9</outputID>
+ <state>AOF</state>
+ <deviceID>3_3</deviceID>
+</outlet>
+<outlet>
+ <name>Heater_2</name>
+ <outputID>10</outputID>
+ <state>AOF</state>
+ <deviceID>3_4</deviceID>
+</outlet>
+<outlet>
+ <name>Skimmer</name>
+ <outputID>11</outputID>
+ <state>AON</state>
+ <deviceID>3_5</deviceID>
+</outlet>
+<outlet>
+ <name>Light</name>
+ <outputID>12</outputID>
+ <state>AON</state>
+ <deviceID>3_6</deviceID>
+</outlet>
+<outlet>
+ <name>EB8_3_7</name>
+ <outputID>13</outputID>
+ <state>AOF</state>
+ <deviceID>3_7</deviceID>
+</outlet>
+<outlet>
+ <name>Heater_1</name>
+ <outputID>14</outputID>
+ <state>AOF</state>
+ <deviceID>3_8</deviceID>
+</outlet>
+<outlet>
+ <name>NeedHeat</name>
+ <outputID>15</outputID>
+ <state>AOF</state>
+ <deviceID>Cntl_A1</deviceID>
+</outlet>
+<outlet>
+ <name>PwrOutDelay</name>
+ <outputID>16</outputID>
+ <state>AOF</state>
+ <deviceID>Cntl_A2</deviceID>
+</outlet>
+<outlet>
+ <name>Virt_A3</name>
+ <outputID>17</outputID>
+ <state>AOF</state>
+ <deviceID>Cntl_A3</deviceID>
+</outlet>
+<outlet>
+ <name>Virt_A4</name>
+ <outputID>18</outputID>
+ <state>AOF</state>
+ <deviceID>Cntl_A4</deviceID>
+</outlet>
+<outlet>
+ <name>Virt_A5</name>
+ <outputID>19</outputID>
+ <state>AOF</state>
+ <deviceID>Cntl_A5</deviceID>
+</outlet>
+<outlet>
+ <name>Virt_A6</name>
+ <outputID>20</outputID>
+ <state>AOF</state>
+ <deviceID>Cntl_A6</deviceID>
+</outlet>
+<outlet>
+ <name>Virt_A7</name>
+ <outputID>21</outputID>
+ <state>AOF</state>
+ <deviceID>Cntl_A7</deviceID>
+</outlet>
+<outlet>
+ <name>Virt_A8</name>
+ <outputID>22</outputID>
+ <state>AOF</state>
+ <deviceID>Cntl_A8</deviceID>
+</outlet>
+</outlets></status>
