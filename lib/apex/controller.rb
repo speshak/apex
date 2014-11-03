@@ -11,5 +11,10 @@ module Apex
 		def status
 			Status.from_xml(open("#{@url}/cgi-bin/status.xml"))
 		end
+
+
+		def datalog
+			Datalog.from_xml(open("#{@url}/cgi-bin/datalog.xml"))
+		end
 	end
 end

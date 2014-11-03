@@ -6,6 +6,7 @@
 require "apex/version"
 require "apex/controller"
 require "apex/status"
+require "apex/datalog"
 
 
 module Apex
