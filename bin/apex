@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require 'apex/cli'
-
-Apex::Cli.start(ARGV)
