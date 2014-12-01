@@ -26,7 +26,7 @@ module Apex
 			doc.xpath('//status/probes/probe').each{|probe|
 				add_probe(
 					probe.at_xpath('./name').text,
-					BigDecimal.new(probe.at_xpath('./value').text),
+					probe.at_xpath('./value').text,
 					probe.at_xpath('./type').text
 				)
 			}
@@ -44,7 +44,7 @@ module Apex
 
 
 		def add_probe(name, value, type)
-			@probes[name] = { :value => value, :type => type }
+			@probes[name] = { :value => BigDecimal.new(value), :type => type }
 		end
 
 

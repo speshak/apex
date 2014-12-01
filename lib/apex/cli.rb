@@ -28,5 +28,13 @@ module Apex
 
 		end
 
+
+
+		desc "datalog", "Get datalog values"
+		option :url, :required => true
+		def datalog
+			puts "Not yet implemented"
+		end
+
 	end
 end
