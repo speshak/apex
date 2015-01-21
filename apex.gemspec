@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Apex::VERSION
   spec.authors       = ["Scott Peshak"]
   spec.email         = ["scott@peshak.net"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Gem for interacting with a Neptune Apex aquarium controller.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
