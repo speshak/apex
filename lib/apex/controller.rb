@@ -2,7 +2,8 @@ require 'open-uri'
 require 'mechanize'
 
 module Apex
-  class Controller 
+  class Controller
+    # Controller URL
     attr_accessor :url
 
     # Controller username
@@ -16,11 +17,15 @@ module Apex
       @url = url
     end
 
+    ##
+    # Get the current status of the controller
     def status
       Status.from_xml(open("#{@url}/cgi-bin/status.xml"))
     end
 
 
+    ##
+    # Get the datalog from the controller
     def datalog
       Datalog.from_xml(open("#{@url}/cgi-bin/datalog.xml"))
     end
