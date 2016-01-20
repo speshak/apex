@@ -1,6 +1,6 @@
 require 'open-uri'
-require 'mechanize'
 require 'yaml'
+require 'httpclient'
 
 module Apex
   class Controller
@@ -59,8 +59,8 @@ module Apex
     # Get a prepared UserAgent
     def user_agent
       unless @user_agent
-        @user_agent = WWW::Mechanize.new
-        @user_agent.basic_auth(@user, @password)
+        @user_agent = HTTPClient.new
+        @user_agent.set_auth(@url, @user, @password)
       end
 
       @user_agent
