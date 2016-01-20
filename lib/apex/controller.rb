@@ -1,20 +1,20 @@
 require "open-uri"
 
 module Apex
-	class Controller 
-		attr_accessor :url
+  class Controller 
+    attr_accessor :url
 
-		def initialize(url)
-			@url = url
-		end
+    def initialize(url)
+      @url = url
+    end
 
-		def status
-			Status.from_xml(open("#{@url}/cgi-bin/status.xml"))
-		end
+    def status
+      Status.from_xml(open("#{@url}/cgi-bin/status.xml"))
+    end
 
 
-		def datalog
-			Datalog.from_xml(open("#{@url}/cgi-bin/datalog.xml"))
-		end
-	end
+    def datalog
+      Datalog.from_xml(open("#{@url}/cgi-bin/datalog.xml"))
+    end
+  end
 end
