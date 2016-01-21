@@ -31,6 +31,8 @@ module Apex
         @url = conf['url']
         @user = conf['user']
         @password = conf['password']
+      else
+        raise Exception.new('Config file not found!')
       end
     end
 
