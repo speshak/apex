@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'mechanize'
+require 'yaml'
 
 module Apex
   class Controller
@@ -13,9 +14,26 @@ module Apex
     attr_accessor :password
 
 
-    def initialize(url)
-      @url = url
+    def initialize(url=nil)
+      load_conf
+
+      if url
+        @url = url
+      end
     end
+
+    ##
+    # Look for a config file & load
+    def load_conf
+      conf_file = File.expand_path('~/.apexcli')
+      if File.exist?(conf_file)
+        conf = YAML.load_file(conf_file)
+        @url = conf['url']
+        @user = conf['user']
+        @password = conf['password']
+      end
+    end
+
 
     ##
     # Get the current status of the controller
