@@ -2,9 +2,11 @@ require 'apex'
 require 'thor'
 require 'terminal-table'
 
+require_relative 'profile'
+
 module Apex
   module Cli
-    class Cli < Thor
+    class Main < Thor
       desc "status", "Get current status of controller outlets & probes"
       def status
         cont = Apex::Controller.new()
