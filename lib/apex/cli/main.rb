@@ -2,13 +2,14 @@ require 'apex'
 require 'thor'
 require 'terminal-table'
 
+require_relative 'profile'
+
 module Apex
   module Cli
-    class Cli < Thor
+    class Main < Thor
       desc "status", "Get current status of controller outlets & probes"
-      option :url, :required => true
       def status
-        cont = Apex::Controller.new(options[:url])
+        cont = Apex::Controller.new()
         status = cont.status
 
         puts "Apex status as of #{status.date.strftime('%F %R')}"
@@ -32,7 +33,6 @@ module Apex
 
 
       desc "datalog", "Get datalog values"
-      option :url, :required => true
       def datalog
         puts "Not yet implemented"
       end
