@@ -14,7 +14,7 @@ module Apex
 
       doc.xpath('//datalog/record').each{|record|
         stat = Status.new
-        
+
         record.xpath('./probe').each{|probe|
           stat.add_probe(
             probe.at_xpath('./name').text,

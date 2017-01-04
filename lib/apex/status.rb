@@ -55,6 +55,6 @@ module Apex
         :device_id  => device_id,
       }
     end
-    
+
   end
 end
