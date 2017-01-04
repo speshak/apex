@@ -1,15 +1,15 @@
-require 'apex'
+require 'neptune_apex'
 require 'thor'
 require 'terminal-table'
 
 require_relative 'profile'
 
-module Apex
+module NeptuneApex
   module Cli
     class Main < Thor
       desc "status", "Get current status of controller outlets & probes"
       def status
-        cont = Apex::Controller.new()
+        cont = NeptuneApex::Controller.new()
         status = cont.status
 
         puts "Apex status as of #{status.date.strftime('%F %R')}"

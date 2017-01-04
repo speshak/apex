@@ -1,7 +1,7 @@
 require 'bigdecimal'
 require "nokogiri"
 
-module Apex
+module NeptuneApex
   class Status
     attr_accessor :date, :power, :probes, :outlets
 

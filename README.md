@@ -1,4 +1,4 @@
-# Apex
+# NeptuneApex
 
 A Ruby Gem for interacting with a Neptune Apex aquarium controller.
 
@@ -7,7 +7,7 @@ A Ruby Gem for interacting with a Neptune Apex aquarium controller.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'apex'
+gem 'neptune_apex'
 ```
 
 And then execute:
@@ -16,11 +16,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install apex
+    $ gem install neptune_apex
 
 ## Usage
 
 TODO: Write usage instructions here
+
+## Legal
+
+This module is in no way affiliated with Neptune Systems, the maker of the Apex controller.
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 require 'thor'
 
-module Apex
+module NeptuneApex
   module Cli
     class ProfileCli < Thor
       desc "export <name>", "Exports profile named <name>"

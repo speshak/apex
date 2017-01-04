@@ -1,6 +1,6 @@
 require "nokogiri"
 
-module Apex
+module NeptuneApex
   class Datalog
     attr_accessor :records
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'apex/cli/main'
+require 'neptune_apex/cli/main'
 
-Apex::Cli::Main.start(ARGV)
+NeptuneApex::Cli::Main.start(ARGV)

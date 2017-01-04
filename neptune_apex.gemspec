@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'apex/version'
+require 'neptune_apex/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "apex"
-  spec.version       = Apex::VERSION
+  spec.name          = "neptune_apex"
+  spec.version       = NeptuneApex::VERSION
   spec.authors       = ["Scott Peshak"]
   spec.email         = ["scott@peshak.net"]
   spec.summary       = %q{Gem for interacting with a Neptune Apex aquarium controller.}

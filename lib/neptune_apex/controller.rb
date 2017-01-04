@@ -2,7 +2,7 @@ require 'open-uri'
 require 'yaml'
 require 'httpclient'
 
-module Apex
+module NeptuneApex
   class Controller
     # Controller URL
     attr_accessor :url
