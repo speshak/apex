@@ -14,34 +14,6 @@ module NeptuneApex
     attr_accessor :password
 
 
-    def initialize(url=nil)
-      load_conf
-
-      if url
-        @url = url
-      end
-    end
-
-    ##
-    # Look for a config file & load
-    def load_conf
-      conf_file = File.expand_path('~/.apexcli')
-
-      if ENV['APEXCONF']
-        conf_file = ENV['APEXCONF']
-      end
-
-      if File.exist?(conf_file)
-        conf = YAML.load_file(conf_file)
-        @url = conf['url']
-        @user = conf['user']
-        @password = conf['password']
-      else
-        raise Exception.new('Config file not found!')
-      end
-    end
-
-
     ##
     # Get the current status of the controller
     def status
